@@ -1,0 +1,40 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: 您好！请问我可以帮到您吗？
+  - text: 您好！很高兴为您服务。请说出您要查询的功能?
+
+  utter_cheer_up:
+  - text: 这是一些图片：
+
+  utter_did_that_help:
+  - text: 这对你有帮助么？
+
+  utter_happy:
+  - text: 那很好哦
+  - text: 真为你开心
+
+  utter_goodbye:
+  - text: 再见
+  - text: 拜拜
+  - text: 虽然我有万般舍不得，但是天下没有不散的宴席~祝您安好！
+  - text: 期待下次再见！
+  - text: 嗯嗯，下次需要时随时记得我哟~
+
+
+  utter_iamabot:
+  - text:  我是个机器人
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
