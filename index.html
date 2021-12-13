@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <div id="webchat">
+  
 </div>
-<script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+<style>
+  body {
+    background-color: lightblue;
+    background-image: url("static/js/family-doctor.jpg");
+  }
+
+  </style>
+<h2 style="text-align: center;font-size: 50px;">家庭医生</h2>
+<script src="static/js/index.min.js">
+  
+</script>
+<!--https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js
+https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js
+-->
 <link rel="stylesheet" type="text/css" href="https://">
+
 <script>!(function () {
+  
   let e = document.createElement("script"),
     t = document.head || document.getElementsByTagName("head")[0];
   (e.src =
-    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+    "static/js/index.js"),
     (e.async = !0),
     (e.onload = () => {
       window.WebChat.default(
@@ -25,20 +41,20 @@
   },
     
     socketPath: "/socket.io/",
-    title: "Street Bot",
+    title: "Family Medicine (家庭医生）",
     tooltipPayload: "/get_started",
     tooltip: true,    
     tooltipDelay: 500,
-    subtitle: "Powered by XYZ",
+    subtitle: "Powered by Group 4",
     connectingText: "Waiting for server...",
-    profileAvatar: "https://",
+    profileAvatar: "static/js/doctor.png",
     openLauncherImage: "https://",
 
     params: {"storage": "session"}, 
     
     mainColor: "#ffd600",
     userBackgroundColor: "#ffd600",
-    userTextColor: "#cde9ce",
+    userTextColor: "#020a02",
     showMessageDate: false,
     inputTextFieldHint: "Hi.Type your message here...",
     badge: " ",
