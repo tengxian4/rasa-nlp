@@ -128,3 +128,17 @@ nlu:
     - 你是机器人吗？
     - 你是人类么？
     - 我正在和机器人交谈？
+
+- intent: fever
+  examples: |
+    - 头很烧
+    - 额头很烧
+    - 发烧
+
+- intent: runny_nose
+  examples: |
+    -留鼻涕
+
+- intent: cough
+  examples: |
+    - 咳嗽

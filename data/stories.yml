@@ -28,3 +28,33 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: fever 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fever
+  - action: utter_solution_fever
+  - action: utter_other_symptoms
+  - intent: affirm 
+  - action: utter_goodbye
+
+- story: runny nose 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: runny_nose
+  - action: utter_solution_runny_nose
+  - action: utter_other_symptoms
+  - intent: affirm  
+  - action: utter_goodbye
+
+- story: cough
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cough
+  - action: utter_solution_cough
+  - action: utter_other_symptoms
+  - intent: affirm  
+  - action: utter_goodbye
