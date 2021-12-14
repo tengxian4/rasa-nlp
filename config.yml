@@ -3,7 +3,12 @@
 language: zh
 
 pipeline:
-   - name: JiebaTokenizer
+   - name: SpacyNLP
+     
+     model: zh_core_web_lg
+     
+   - name: SpacyTokenizer
+   - name: SpacyFeaturizer
    - name: RegexFeaturizer
    - name: LexicalSyntacticFeaturizer
    - name: CountVectorsFeaturizer

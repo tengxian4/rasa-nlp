@@ -8,11 +8,13 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - fever
+  - runny_nose
+  - cough
 
 responses:
   utter_greet:
-  - text: 您好！请问我可以帮到您吗？
-  - text: 您好！很高兴为您服务。请说出您要查询的功能?
+  - text: 您好！很高兴为您服务。您有哪里不舒服吗?
 
   utter_cheer_up:
   - text: 这是一些图片：
@@ -27,13 +29,23 @@ responses:
   utter_goodbye:
   - text: 再见
   - text: 拜拜
-  - text: 虽然我有万般舍不得，但是天下没有不散的宴席~祝您安好！
-  - text: 期待下次再见！
   - text: 嗯嗯，下次需要时随时记得我哟~
-
 
   utter_iamabot:
   - text:  我是个机器人
+
+  utter_other_symptoms:
+  - text: 您还有哪里不舒服吗？
+
+  utter_solution_fever:
+  - text: 可以买 Paracetamol, 1-2 粒 500mg, 一天 2 次
+
+  utter_solution_runny_nose:
+  - text: 您需要喝多一点水
+
+  utter_solution_cough:
+  - text: 您可以服用枇杷膏， 每两个小时两茶匙
+
 
 session_config:
   session_expiration_time: 60
