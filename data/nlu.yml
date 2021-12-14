@@ -137,8 +137,10 @@ nlu:
 
 - intent: runny_nose
   examples: |
-    -留鼻涕
+    - 流鼻涕
+    - 伤风
 
 - intent: cough
   examples: |
     - 咳嗽
+    - 干咳
